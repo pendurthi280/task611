@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="task6.css">
+  <script src="model.js"></script>
+  <script src="service.js"></script>
+  <script src="task6.js"></script>
+
+  <title>Document</title>
+</head>
+
+<body>
+  <h2 class="h2">Address Book</h2>
+  <div class="navbar">
+    <div>
+      <ul class="ul">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#" onclick="enterdetails() ">+ADD</a></li>
+      </ul>
+    </div>
+    <div class="blog"> <img src="blog-icon.png" alt="blog"></div>
+  </div>
+  <div class="divdisplay">
+    <h3 class="h3">CONTACTS</h3>
+     <div id="output" class="output"> </div> 
+  </div>
+  <div>
+    <ul class="unorder" id="unorder">
+
+    </ul>
+  </div>
+
+
+  
+  
+  <!--<dialog id="iframediv" class="iframediv">-->
+   <div id="iframediv" class="iframediv">
+    <form id="formData">
+      <div class="padding1">
+        <lable>Name</lable>
+        <div class="displayflex"><input type="text" id="Name" class="input"></div>
+      </div>
+      <div class="padding1">
+        <lable class="lable"> Email</lable>
+        <div class="displayflex"><input type="text" class="input" id="Email"></div>
+      </div>
+      <div class="display">
+        <div class="mobile"><label>Mobile</label>
+          <div class="displayflex"><input type="text" class="moblieinput" id="Phone"></div>
+        </div>
+        <div>
+          <label>Landline</label>
+          <div><input type="text" class="moblieinput" id="Landline"></div>
+        </div>
+      </div>
+      <div class="padding1">
+        <lable>Website</lable>
+        <div class="displayflex"><input type="text" class="input" id="WebSite"></div>
+      </div>
+      <div class="padding1">
+        <label> Address</label>
+        <div class="displayflex"><input type="text" class="inputaddress" id="Address"></div>
+      </div>
+
+      <div><button class="buttton" onclick=" addContact1(new Contact(0, '', '', '','','',''))"
+          id="detailbutton">Add</button></div>
+    </form>
+  </div>
+  </div>
+<!--</dialog>-->
+
+
+
+
+
+
+</body>
+
+</html>
