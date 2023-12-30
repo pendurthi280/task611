@@ -1,13 +1,13 @@
 class Contact 
 {
-    constructor(id, Name, Email, Phone, Landline, Website, Address) 
+    constructor(args) 
     {
-        this.id = id;
-        this.Name = Name;
-        this.Email = Email;
-        this.Phone = Phone;
-        this.Landline = Landline;
-        this.Website = Website;
-        this.Address = Address;
+        this.id = args.id;
+        this.name = args.name;
+        this.email = args.email;
+        this.phone = args.phone;
+        this.landline = args.landline;
+        this.website = args.website;
+        this.address = args.address;
     }
 }
